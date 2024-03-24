@@ -44,14 +44,14 @@ function playGame(choice){
         playerResult = playerResult + 1;
     }
     if (computerResult >= 5){
-        alert("You have lost :(");
         playerResult = 0;
         computerResult = 0;
+        alert("You have lost :(");
     }
     if (playerResult >= 5){
-        alert("You have won !!! :)");
         playerResult = 0;
         computerResult = 0;
+        alert("You have won !!! :)");
     }
     document.getElementById("playerScore").innerHTML = playerResult;
     document.getElementById("computerScore").innerHTML = computerResult;
